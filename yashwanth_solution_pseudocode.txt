@@ -1,0 +1,16 @@
+## Pseudocode
+# Code below is written in python by Yashwanth for Qualcomm interview.
+#
+#Steps:
+# 1. Initialise the 
+## a. Belt of length 3, for belt we are using Deque Data structure in python.
+## b. workers count, here we took it as three
+# 2. Iterate for 100 steps and in each step, remove the last element from end 
+#    and append the new component randomly generated to the left side of the deque
+# 3. During each iteration, perform the assining of components based on below scenarios
+## a. If adjacent worker performed a task then block the worker
+## b. If the product is completed and waiting then decerement the count by 1
+## c. If components is not assigned to worker and its present in the belt adjacent to them then assign it to him
+## d. If the belt component is empty then push the product if its ready at workers hand.
+
+
